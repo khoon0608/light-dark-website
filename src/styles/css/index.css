@@ -1,0 +1,154 @@
+/** @format */
+/** @format */
+/** @format */
+main {
+  flex: 1 1 auto;
+  background-color: white;
+  color: #2b283a;
+}
+main .main--title {
+  margin: 0;
+  font-size: 39px;
+  letter-spacing: -0.05em;
+}
+main .main--facts {
+  margin-top: 46px;
+  max-width: 400px;
+}
+main .main--facts li {
+  line-height: 19px;
+  padding-block: 10px;
+}
+main .main--facts li::marker {
+  font-size: 1.4rem;
+  color: #61dafb;
+}
+
+.dark {
+  color: white;
+}
+
+/** @format */
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 30px 25px;
+  height: 60px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+nav .nav--logo_icon {
+  width: 30px;
+  margin-right: 10px;
+}
+nav .nav--logo_text {
+  color: #61dafb;
+  margin-right: auto;
+}
+nav .toggler {
+  display: flex;
+  align-items: center;
+}
+nav .toggler p {
+  font-size: 0.625rem;
+  font-weight: 600;
+}
+nav .toggler .toggler--light {
+  color: #2b283a;
+}
+nav .toggler .toggler--dark {
+  color: #d5d4d8;
+}
+nav .toggler .toggler--slider {
+  width: 25px;
+  height: 13px;
+  border-radius: 2rem;
+  margin-inline: 7px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+  box-sizing: content-box;
+}
+nav .toggler .toggler--slider .toggler--slider--circle {
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+}
+
+.dark {
+  background-color: #21222a;
+}
+.dark .toggler--slider {
+  border-color: white;
+  background-color: #f5f5f5;
+  justify-content: flex-end;
+}
+.dark .toggler--slider .toggler--slider--circle {
+  background-color: black;
+  animation: moveCircleToDark 1s ease-in-out forwards;
+}
+.dark .toggler--light {
+  color: #918e9b;
+}
+.dark .toggler-dark {
+  color: #ffffff;
+}
+
+.light .toggler--slider {
+  background-color: #2b283a;
+}
+.light .toggler--slider .toggler--slider--circle {
+  background-color: white;
+  animation: moveCircleToLight 1s ease-in-out forwards;
+}
+
+@keyframes moveCircleToLight {
+  from {
+    margin-left: 10px;
+  }
+  to {
+    margin-left: 0px;
+  }
+}
+@keyframes moveCircleToDark {
+  from {
+    margin-left: 0px;
+  }
+  to {
+    margin-left: 12px;
+  }
+}
+.nav--title {
+  color: #deebf8;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 660px;
+  height: 660px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  background-color: gray;
+}
+
+/*# sourceMappingURL=index.css.map */

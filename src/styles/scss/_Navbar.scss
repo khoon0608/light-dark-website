@@ -1,0 +1,113 @@
+/** @format */
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 30px 25px;
+  height: 60px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+
+  .nav--logo_icon {
+    width: 30px;
+    margin-right: 10px;
+  }
+
+  .nav--logo_text {
+    color: #61dafb;
+    margin-right: auto;
+  }
+
+  .toggler {
+    display: flex;
+    align-items: center;
+
+    p {
+      font-size: 0.625rem;
+      font-weight: 600;
+    }
+
+    .toggler--light {
+      color: #2b283a;
+    }
+
+    .toggler--dark {
+      color: #d5d4d8;
+    }
+
+    .toggler--slider {
+      width: 25px;
+      height: 13px;
+      border-radius: 2rem;
+      margin-inline: 7px;
+      cursor: pointer;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      border: 1px solid black;
+      box-sizing: content-box;
+
+      .toggler--slider--circle {
+        height: 13px;
+        width: 13px;
+
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.dark {
+  background-color: #21222a;
+
+  .toggler--slider {
+    border-color: white;
+    background-color: #f5f5f5;
+    justify-content: flex-end;
+
+    .toggler--slider--circle {
+      background-color: black;
+      animation: moveCircleToDark 1s ease-in-out forwards;
+    }
+  }
+
+  .toggler--light {
+    color: #918e9b;
+  }
+  .toggler-dark {
+    color: #ffffff;
+  }
+}
+
+.light {
+  .toggler--slider {
+    background-color: #2b283a;
+    .toggler--slider--circle {
+      background-color: white;
+      animation: moveCircleToLight 1s ease-in-out forwards;
+    }
+  }
+}
+
+@keyframes moveCircleToLight {
+  from {
+    margin-left: 10px;
+  }
+  to {
+    margin-left: 0px;
+  }
+}
+
+@keyframes moveCircleToDark {
+  from {
+    margin-left: 0px;
+  }
+  to {
+    margin-left: 12px;
+  }
+}
+
+.nav--title {
+  color: #deebf8;
+}

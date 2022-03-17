@@ -1,0 +1,32 @@
+/** @format */
+
+main {
+  flex: 1 1 auto;
+  background-color: white;
+  color: #2b283a;
+
+  .main--title {
+    margin: 0;
+    font-size: 39px;
+    letter-spacing: -0.05em;
+  }
+
+  .main--facts {
+    margin-top: 46px;
+    max-width: 400px;
+
+    li {
+      line-height: 19px;
+      padding-block: 10px;
+
+      &::marker {
+        font-size: 1.4rem;
+        color: #61dafb;
+      }
+    }
+  }
+}
+
+.dark {
+  color: white;
+}
